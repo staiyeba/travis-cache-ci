@@ -22,3 +22,4 @@ git_push() {
 set_cred
 git_commit
 git_push
+conan -h
