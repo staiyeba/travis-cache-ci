@@ -9,7 +9,7 @@ set_cred() {
 
 git_commit() {
   cd travisci-cache
-  git add *.tar.gz
+  git add homebrew-cache.tar.gz
   git commit -m "Build number: $TRAVIS_BUILD_NUMBER"
 }
 
