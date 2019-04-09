@@ -4,6 +4,9 @@ language: bash
 git:
   depth: false
 
+before_install:
+  - git config --global user.name $git_name
+  - git config --global user.password $git_token
 install:
   - .ci/install.sh
 
