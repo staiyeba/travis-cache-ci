@@ -15,8 +15,8 @@ git_commit() {
 
 
 git_push() {
-  git remote add origin-upload git@github.com:staiyeba/travisci-cache.git
-  yes | git push -f origin-upload master
+  git remote add origin-upload https://${GH_TOKEN}@github.com/staiyeba/travisci-cache.git
+  yes | git push --quiet --set-upstream origin-upload master
 }
 
 set_cred
