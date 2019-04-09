@@ -4,9 +4,6 @@ language: bash
 git:
   depth: false
 
-before_install:
-  - brew update
-
 install:
   - .ci/install.sh
 
