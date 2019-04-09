@@ -2,8 +2,8 @@
 
 
 set_cred() {
-  - git config --global user.name "staiyeba"
-  - git config --global user.email "staiyeba@gmail.com"
+  git config --global user.name "staiyeba"
+  git config --global user.email "staiyeba@gmail.com"
 }
 
 git_commit() {
@@ -14,7 +14,7 @@ git_commit() {
 
 
 git_push() {
-  git remote add origin-ssh https://${git_tok}@github.com/travisci-cache.git
+  git remote add origin-ssh https://${GH_TOKEN}@github.com/travisci-cache.git
   git push --set-upstream origin-ssh master
 }
 
