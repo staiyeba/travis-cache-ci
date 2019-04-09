@@ -4,10 +4,6 @@ language: bash
 git:
   depth: false
 
-before_install:
-  - git config --global user.name $git_name
-  - git config --global user.password $git_tok
-  - git config --global user.email staiyeba@gmail.com
 install:
   - .ci/install.sh
 
@@ -18,7 +14,4 @@ before_script:
   - ls travisci-cache/
 
 script:
-  - cd travisci-cache
-  - git add .
-  - git commit -m "uploading all"
-  - git push origin master
+  - .ci/push.sh
