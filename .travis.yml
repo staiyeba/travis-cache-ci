@@ -12,7 +12,7 @@ install:
 
 before_script:
   - git clone https://github.com/staiyeba/travisci-cache.git
-  - tar czf travisci-cache/homebrew-cache.tar.gz --directory /usr/local/Cellar
+  - tar czf travisci-cache/homebrew-cache.tar.gz --directory /usr/local/Cellar conan cmake python
   - ls travisci-cache/
 
 script:
