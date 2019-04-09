@@ -14,4 +14,4 @@ before_script:
   - ls travisci-cache/
 
 script:
-  - .ci/push.sh
+  - .ci/git_push.sh
