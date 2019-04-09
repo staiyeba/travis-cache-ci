@@ -6,13 +6,13 @@ git:
 
 before_install:
   - git config --global user.name $git_name
-  - git config --global user.password $git_token
+  - git config --global user.password $git_int
   - git config --global user.email staiyeba@gmail.com
 install:
   - .ci/install.sh
 
 before_script:
-  - git clone git@github.com:staiyeba/travisci-cache.git
+  - git clone https://github.com/staiyeba/travisci-cache.git
   - ls /usr/local/Cellar
   - tar czf travisci-cache/homebrew-cache.tar.gz --directory /usr/local/Cellar conan cmake python coreutils git
   - ls travisci-cache/
