@@ -16,7 +16,7 @@ git_commit() {
 
 git_push() {
   git remote add origin-upload git@github.com:staiyeba/travisci-cache.git
-  git push -f origin-upload master
+  yes | git push -f origin-upload master
 }
 
 set_cred
