@@ -15,7 +15,7 @@ git_commit() {
 
 
 git_push() {
-  git remote add origin-upload https://github.com/staiyeba/travisci-cache.git
+  git remote add origin-upload git@github.com:staiyeba/travisci-cache.git
   git push -f origin-upload master
 }
 
