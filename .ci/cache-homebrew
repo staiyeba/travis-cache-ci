@@ -3,5 +3,5 @@
 git clone https://github.com/staiyeba/travisci-cache.git
 cd travisci-cache
 if [ ! -f homebrew-cache.tar.gz ]; then
-  tar czf travisci-cache/homebrew-cache.tar.gz --directory /usr/local/Cellar wine libtool conan cmake python
+  tar czf travisci-cache/homebrew-cache.tar.gz --directory /usr/local/Cellar wine libtool conan cmake python3
 fi
